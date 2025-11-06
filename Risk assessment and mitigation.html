@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 Cohort 4 Assessment 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "Navigation">
+        <div class = "image">
+            <img src = "logo.png" style = "height: 180px;">
+        </div>
+        <div class = "Title">
+            <h1>Engineering 1: Assessment 1</h1>
+            <h2>Cohort 4 Group 4: FOUR</h2>
+            <h3>by Daniel Bassey, Gracie Dudgeon, Henry Fields, Nissy Katta, Oscar MacDonald, Yakup Ozturk and Hannah Pugh </h3>
+        </div>
+    </div>
+
+    <div class = "Deliverables">
+        <div class = "Deliverables-Links">
+            <ul>
+                <li> <a href = "/index.html"> Requirements </a> </li>
+                <li> <a href = "/architecture.html" > Architecture </a> </li>
+                <li> <a href = "/Method selection and planning.html" > Method selection and planning </a> </li>
+                <li> <a href = "/Risk assessment and mitigation.html" > Risk assessment and mitigation  </a> </li>
+                <li> <a href = "/Implementation.html" > Implementation </a> </li>
+                <li> <a target="_blank"> Executable JAR </a> </li>
+                <li> <a target="_blank"> Version control repository </a> </li>
+            </ul>
+        </div>
+    
+        <div class = "Deliverables-Viewer">
+            <div id = "Risk assessment and mitigation">
+                <h1 style = "text-align: center;">Risk assessment and mitigation</h1>
+                <p>Link to document: <a href = "https://docs.google.com/document/d/1EdSO258nDiOnUqpsuKsUOvMwZyCFOMo2uLcpnVdmt5w/edit?usp=sharing" target = "_blank">here</a></p>
+                
+                <h2>1. Risk Management Process</h2>
+                <p>Handling risks is an important part of measuring success within software engineering. This importance is emphasised for group projects, as many uncertainties can occur in a limited timeframe. <br>
+                <h3>Identification</h3>
+                Risks were identified through team brainstorming sessions, review of the ENG1 product brief, and by considering the risk categories suggested in the ENG1 Lecture slides:
+                <br><br>
+                To identify risks, the team reviewed the product brief and had brainstorming sessions, considering the different categories of risks. Such categories are listed below:
+                <ul>
+                    <li>Project risks - Scheduling, resources, team management. </li>
+                    <li>Product risks - Quality, correctness, completeness of the game.</li>    
+                    <li>Technical risks - Tools, libraries, IDEs, technologies used.</li> 
+                    <li>Requirements risks - Unclear or evolving requirements.</li>
+                </ul>
+                <h3>Analysis</h3>
+                <p>Each risk is assessed using a qualitative scale for:</p>
+                <ul>
+                    <li>Likelihood: Low (L), Medium (M), High (H).</li>
+                    <li>Severity: Low (L), Medium (M), High (H). </li>
+                </ul>
+                <p>This ensures simple but effective prioritisation, appropriate for our student project.</p>
+                <h3>Planning & Mitigation</h3>
+                <p>For each risk we define:</p>
+                <ul>
+                    <li>Mitigation strategies –  actions to reduce likelihood or impact.</li>
+                    <li>Contingency plans –  fallback approaches if mitigation fails.</li>
+                    <li>Ownership – a team member responsible for monitoring the risk.</li>
+                </ul>
+                <h3>Monitoring</h3> 
+                <p>Every week during the team meetings, we will review the risks. The owners will reconsider how likely and severe they are, adding any new ones if found. To keep track of accountability, updates on risk status will be noted.
+                </p>
+
+                <h2>2. Risk Register</h2>
+                <table>
+                    <tr>
+                            <th>ID</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Likelihood</th>
+                            <th>Severity</th>
+                            <th>Mitigation / Contingency</th>
+                            <th>Owner</th>
+                    </tr>
+                    <tr>
+                            <td>R1</td>
+                            <td>Project</td>
+                            <td>A team member withdraws or contributes significantly less than the other members.</td>
+                            <td>M</td>
+                            <td>H</td>
+                            <td>Assign backup roles. Redistribute workload early. Escalate to lecturers if unresolved.</td>
+                            <td>Hannah</td>
+                    </tr>
+                    <tr>
+                            <td>R2</td>
+                            <td>Requirements</td>
+                            <td>Misinterpretation of the product brief leads to incorrect features.</td>
+                            <td>M</td>
+                            <td>M</td>
+                            <td>Confirm interpretations in meetings. Clarify with lecturers if uncertain.</td>
+                            <td>Yakup</td>
+                    </tr>
+                    <tr>
+                            <td>R3</td>
+                            <td>Technology</td>
+                            <td>Git conflicts or repository loss.</td>
+                            <td>M</td>
+                            <td>H</td>
+                            <td>Follow a Git branching procedure. Commit regularly. Maintain backups.</td>
+                            <td>Dan</td>
+                    </tr>
+                    <tr>
+                            <td>R4</td>
+                            <td>Product</td>
+                            <td>Chosen graphics/game library proves unreliable or incompatible.</td>
+                            <td>L</td>
+                            <td>H</td>
+                            <td>Research libraries early. Test alternatives. Use Java standard libraries when needed.</td>
+                            <td>Hannah</td>
+                    </tr>
+                    <tr>
+                            <td>R5</td>
+                            <td>Project</td>
+                            <td>Time overruns due to underestimating task effort.</td>
+                            <td>H</td>
+                            <td>H</td>
+                            <td>Maintain weekly project plan. Prioritise core features. Cut optional features if needed.</td>
+                            <td>Gracie</td>
+                    </tr>
+                    <tr>
+                            <td>R6</td>
+                            <td>People</td>
+                            <td>Poor communication leading to duplicated or incomplete work.</td>
+                            <td>M</td>
+                            <td>M</td>
+                            <td>Communicate when needed and regularly. Tell others what work you plan to do/are doing.  Assign clear roles.</td>
+                            <td>Yakup</td>
+                    </tr>
+                    <tr>
+                            <td>R7</td>
+                            <td>Business</td>
+                            <td>Deliverable exceeds page limit and is not marked.</td>
+                            <td>L</td>
+                            <td>M</td>
+                            <td>Allocate manager for each document. Peer review before submission.</td>
+                            <td>Henry</td>
+                    </tr>
+                    <tr>
+                            <td>R8</td>
+                            <td>Product</td>
+                            <td>The game fails to reach “playable” state by submission.</td>
+                            <td>M</td>
+                            <td>H</td>
+                            <td>Prioritise a working minimal game first. Polish features only after core functionality is complete.</td>
+                            <td>Oscar</td>
+                    </tr>
+                    <tr>
+                            <td>R9</td>
+                            <td>Project</td>
+                            <td>Someone falls behind in their allocated part of the project.</td>
+                            <td>M</td>
+                            <td>M</td>
+                            <td>Track weekly progress. Provide support or redistribute tasks. Pair programming where needed.</td>
+                            <td>Dan</td>
+                    </tr>
+                    <tr>
+                            <td>R10</td>
+                            <td>Technology</td>
+                            <td>Libraries have poor documentation or are outdated.</td>
+                            <td>M</td>
+                            <td>M</td>
+                            <td>Choose well-supported libraries. Rely on official APIs. Document findings internally.</td>
+                            <td>Oscar</td>
+                    </tr>
+                    <tr>
+                            <td>R11</td>
+                            <td>People</td>
+                            <td>One person disappears and no one understands their code.</td>
+                            <td>L</td>
+                            <td>H</td>
+                            <td>Enforce code reviews. Shared documentation. Encourage collaborative coding.</td>
+                            <td>Hannah</td>
+                    </tr>
+                    <tr>
+                            <td>R12</td>
+                            <td>Product</td>
+                            <td>Lack of suitable free/usable graphics assets forces team to create assets from scratch.</td>
+                            <td>M</td>
+                            <td>M</td>
+                            <td>Search for open-license assets early. Simplify visuals if necessary. Prioritise functionality over style (to a degree).</td>
+                            <td>Gracie</td>
+                    </tr>
+                    <tr>
+                        <td>R13</td>
+                        <td>Project</td>
+                        <td>Time wasted on tasks outside the brief, leading to little/no additional marks.</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td>Use assessment criteria as checklist. Meetings to remind group weekly to focus on deliverables.</td>
+                        <td>Henry</td>
+                    </tr>
+                </table>
+
+                <h2>3. Review plan</h2>
+                <p>Based on the risks we’ve identified, the team has decided on multiple points of action to reduce the likelihood of these risks:</p>
+                <ul>
+                    <li>Risks will be reviewed weekly in team meetings.</li>
+                    <li>Owners will update likelihood/severity as the project progresses.</li>
+                    <li>Any crucial risks will be communicated at once to the group and mentioned in any related project documents.</li>
+                    <li>Before submission, we will do a last check to make sure that the mitigation methods have been implemented properly.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

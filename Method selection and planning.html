@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 4 Cohort 4 Assessment 1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "Navigation">
+        <div class = "image">
+            <img src = "logo.png" style = "height: 180px;">
+        </div>
+        <div class = "Title">
+            <h1>Engineering 1: Assessment 1</h1>
+            <h2>Cohort 4 Group 4: FOUR</h2>
+            <h3>by Daniel Bassey, Gracie Dudgeon, Henry Fields, Nissy Katta, Oscar MacDonald, Yakup Ozturk and Hannah Pugh </h3>
+        </div>
+    </div>
+
+    <div class = "Deliverables">
+        <div class = "Deliverables-Links">
+            <ul>
+                <li> <a href = "/index.html"> Requirements </a> </li>
+                <li> <a href = "/architecture.html" > Architecture </a> </li>
+                <li> <a href = "/Method selection and planning.html" > Method selection and planning </a> </li>
+                <li> <a href = "/Risk assessment and mitigation.html" > Risk assessment and mitigation  </a> </li>
+                <li> <a href = "/Implementation.html" > Implementation </a> </li>
+                <li> <a target="_blank"> Executable JAR </a> </li>
+                <li> <a target="_blank"> Version control repository </a> </li>
+            </ul>
+        </div>
+    
+        <div class = "Deliverables-Viewer">
+            <div id = "Method selection and planning">
+                <h1 style = "text-align: center;">Method selection and planning</h1>
+                <p>Link to document: <a href = "https://docs.google.com/document/d/1CbQE1W1QqF26yRIcMgxiN1Ab-zVStgFO9jo5YCLVJFQ/edit?usp=sharing" target = "_blank">here</a></p>
+            
+                <h2>1. Software Engineering Methods and Tools</h2>
+                <p>A method in software engineering lays out the way a team transforms requirements into an operational system. It gives a basis for design, implementation and testing while handling alteration and risk. 
+                <br>
+                There are two main types of methods: plan driven and agile. Plan driven approaches depend on comprehensive planning and documentation. On the other hand, agile techniques emphasise flexibility, brief feedback cycles and functional software. Considering the short time frame allocated for our project and small team size, we will adopt a lightweight agile method inspired by Scrum. This approach encourages continuous adjustment and iterative delivery.
+                </p>
+                <h3>Evaluation of Method Options</h3>
+                <table>
+                    <tr>
+                            <th>Element</th>
+                            <th>Plan-Driven</th>
+                            <th>Agile</th>
+                    </tr>
+                    <tr>
+                            <td>Requirements</td>
+                            <td>Must be defined early and be stable</td>
+                            <td>Can evolve during development</td>
+                    </tr>
+                    <tr>
+                            <td>Documentation</td>
+                            <td>Detailed and Formal</td>
+                            <td>Minimal, just enough that it’s understandable </td>
+                    </tr>
+                    <tr>
+                            <td>Iteration</td>
+                            <td>Sequential, single pass</td>
+                            <td>Short repeated cycles (Sprints)</td>
+                    </tr>
+                    <tr>
+                            <td>Adaptability</td>
+                            <td>Low, changes cause disruption</td>
+                            <td>High, changes are expected and embraced</td>
+                    </tr>
+                    <tr>
+                            <td>Team size</td>
+                            <td>Large, Multi-level management </td>
+                            <td>Small, close-knit teams</td>
+                    </tr>
+                    <tr>
+                            <td>Communication</td>
+                            <td>Document-based</td>
+                            <td>Frequent, direct, and informal</td>
+                    </tr>
+                    <tr>
+                            <td>Progress measure</td>
+                            <td>Document milestones</td>
+                            <td>Working software</td>
+                    </tr>
+                </table>
+
+                <p>Plan-driven methods work best for large, stable projects. Agile methods, on the other hand, cope well with uncertainty, short time frames, and rapidly changing ideas, which aligns closely with our project.</p>
+                <h3>Chosen Method: Agile (Scrum-Inspired)</h3>
+                <p>Our team will follow an agile technique based on Scrum. Development will proceed in short, one-week sprints. Each sprint begins with a planning meeting, followed by implementation and testing, and ends with a review where progress and problems are discussed. This method offers regular feedback, visible progress and flexibility. This means we get to make plans for small, achievable goals that can be accomplished fast, react to what’s not working and ensure that the quality of the code doesn’t fall too far before it’s an issue. Each sprint aims to deliver a working and testable build of the game. </p>
+                <h3>Agile Practices Used</h3>
+                
+                <table>
+                    <tr>
+                            <th>Practice</th>
+                            <th>Purpose</th>
+                    </tr>
+                    <tr>
+                            <td>Weekly sprints</td>
+                            <td>Divide work into short, manageable goals.</td>
+                    </tr>
+                    <tr>
+                            <td>Frequent updates (Whatsapp)</td>
+                            <td>Keep all members aware of progress and any problems that arise.</td>
+                    </tr>
+                    <tr>
+                            <td>Pair programming and peer review</td>
+                            <td>Share understanding, ensure code quality.</td>
+                    </tr>
+                    <tr>
+                            <td>Continuous integration on GitHub</td>
+                            <td>Avoid merge conflicts, maintain working builds.</td>
+                    </tr>
+                    <tr>
+                            <td>Simple design focus</td>
+                            <td>Prioritise working features over unnecessary complexity.</td>
+                    </tr>
+                </table>
+
+                <h3>Tools Supporting the Method</h3>
+
+                <table>
+                    <tr>
+                            <th>Category</th>
+                            <th>Tool(s)</th>
+                            <th>Purpose</th>
+                    </tr>
+                    <tr>
+                            <td>Version Control</td>
+                            <td>Git, GitHub</td>
+                            <td>Manage source code and revisions.</td>
+                    </tr>
+                    <tr>
+                            <td>Project Management</td>
+                            <td>GitHub Projects</td>
+                            <td>Plan sprints and visualise progress.</td>
+                    </tr>
+                    <tr>
+                            <td>Communication</td>
+                            <td>Whatsapp</td>
+                            <td>Team coordination and updates.</td>
+                    </tr>
+                    <tr>
+                            <td>Documentation</td>
+                            <td>Google Docs</td>
+                            <td>Collaborative editing and creating of documents.</td>
+                    </tr>
+                    <tr>
+                            <td>Design</td>
+                            <td>Draw.io</td>
+                            <td>Create architecture and UML diagrams.</td>
+                    </tr>
+                    <tr>
+                            <td>Development</td>
+                            <td>Libgdx, IntelliJ</td>
+                            <td>Write, debug, and test the game.</td>
+                    </tr>
+                </table>
+
+                <h2>2. Team Organisation</h2>
+                <p>The team is structured to ensure clear responsibilities, effective communication, and balanced workload. Each member has defined roles while sharing accountability for project quality and timely delivery.</p>
+                <h3>Team Roles and Responsibilities</h3>
+
+                <table>
+                    <tr>
+                            <th>Team Member</th>
+                            <th>Role</th>
+                            <th>Key Responsibilities</th>
+                    </tr>
+                    <tr>
+                            <td>Hannah</td>
+                            <td>Plant</td>
+                            <td>Generates creative ideas and solutions for game design challenges.</td>
+                    </tr>
+                    <tr>
+                            <td>Gracie</td>
+                            <td>Shaper</td>
+                            <td>Motivates the team, keeps momentum, and ensures deadlines are met.</td>
+                    </tr>
+                    <tr>
+                            <td>Dan</td>
+                            <td>Monitor Evaluator</td>
+                            <td>Analyses options critically, provides logical judgement, and ensures decisions are within reason.</td>
+                    </tr>
+                    <tr>
+                            <td>Yakup</td>
+                            <td>Co-ordinator</td>
+                            <td>Organises team efforts, clarifies goals, and ensures everyone works effectively.</td>
+                    </tr>
+                    <tr>
+                            <td>Oscar</td>
+                            <td>Implementer</td>
+                            <td>Translates plans into practical actions, coding the game and making a structured implementation.</td>
+                    </tr>
+                    <tr>
+                            <td>Nissy</td>
+                            <td>Resource Investigator</td>
+                            <td>Explores external ideas, sources assets or tools, and tracks each team member’s performance.</td>
+                    </tr>
+                    <tr>
+                            <td>Henry</td>
+                            <td>Completer Finisher</td>
+                            <td>Focuses on accuracy, detail, and polishing deliverables to ensure high quality and consistency.</td>
+                    </tr>
+                </table>
+
+                <h3>Communication Plan</h3>
+                <p>As a team, we decided on the following plan to maintain frequent and honest communications:</p>
+                <ul>
+                    <li>Weekly meetings to review sprint progress and plan next steps.</li>
+                    <li>Regular updates through Whatsapp to track progress and raise issues.</li>
+                    <li>Shared Google Drive for collaborative document editing.</li>
+                    <li>Post-sprint reviews to discuss improvements and check off tasks.</li>
+                </ul>
+                <h2>3. Project Plan</h2>
+                <p>The project plan outlines the key stages, deliverables, and timeline for completing the work. It ensures that tasks are well organised, progress is trackable, and deadlines are achievable within the given timeframe.</p>
+                <h3>Work Breakdown</h3>
+
+                <table>
+                    <tr>
+                            <th>WP ID</th>
+                            <th>Work Package</th>
+                            <th>Description</th>
+                            <th>Deliverables</th>
+                    </tr>
+                    <tr>
+                            <td>WP1</td>
+                            <td>Requirements</td>
+                            <td>Define functional and non-functional requirements.</td>
+                            <td>Requirements.pdf</td>
+                    </tr>
+                    <tr>
+                            <td>WP2</td>
+                            <td>Architecture</td>
+                            <td>Design game/system structure and UML diagrams.</td>
+                            <td>Architecture.pdf</td>
+                    </tr>
+                    <tr>
+                            <td>WP3</td>
+                            <td>Planning & Risk</td>
+                            <td>Create a plan and assess risks and mitigations.</td>
+                            <td>Planning.pdf, Risk.pdf</td>
+                    </tr>
+                    <tr>
+                            <td>WP4</td>
+                            <td>Implementation</td>
+                            <td>Develop and test gameplay and UI.</td>
+                            <td>Implementation.pdf, JAR file</td>
+                    </tr>
+                    <tr>
+                            <td>WP5</td>
+                            <td>Integration & Review</td>
+                            <td>Final assembly, submission, and quality checks.</td>
+                            <td>Final ZIP, Website URL</td>
+                    </tr>
+                </table>
+
+                <h3>Gantt Chart</h3>
+                <h3>Resource allocation and Roles</h3>
+                <p>At least one team member will support each work package. The shared ownership of code means that everyone can contribute to any part if they wish, but designated coders give guidance and are responsible for the code overall. All members will help with testing and reviewing documents to keep things consistent and high quality, but also so that everyone is satisfied.</p>
+                <h3>Monitoring and Planning Changes</h3>
+                <p>The plan will be discussed each week and at the end of every sprint, if something is running late, resources will be reallocated or the scope will be adjusted to maintain progress. Progress will be monitored by the team using the Gantt chart, GitHub, and Google Docs activity. Plans will be updated continuously to reflect actual progress, ensuring the project adapts effectively to any issues that may arise.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

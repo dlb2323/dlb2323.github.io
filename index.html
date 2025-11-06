@@ -11,31 +11,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <div class = "Navigation">
+        <div class = "image">
+            <img src = "logo.png" style = "height: 180px;">
+        </div>
         <div class = "Title">
             <h1>Engineering 1: Assessment 1</h1>
             <h2>Cohort 4 Group 4: FOUR</h2>
             <h3>by Daniel Bassey, Gracie Dudgeon, Henry Fields, Nissy Katta, Oscar MacDonald, Yakup Ozturk and Hannah Pugh </h3>
         </div>
-        <div class = "image">
-            <img src = "logo.png" style = "height: 180px;">
-        </div>
     </div>
-
-    <h1>Deliverables</h1>
 
     <div class = "Deliverables">
         <div class = "Deliverables-Links">
             <ul>
-                <li> <a href = "#Requirements"> Requirements </a> </li>
-                <li> <a href = "#Architecture"> Architecture </a> </li>
-                <li> <a href = "#Method selection and planning"> Method selection and planning </a> </li>
-                <li> <a href = "#Risk assessment and mitigation"> Risk assessment and mitigation  </a> </li>
-                <li> <a href = "#Implementation"> Implementation </a> </li>
+                <li> <a href = "/index.html"> Requirements </a> </li>
+                <li> <a href = "/architecture.html" > Architecture </a> </li>
+                <li> <a href = "/Method selection and planning.html" > Method selection and planning </a> </li>
+                <li> <a href = "/Risk assessment and mitigation.html" > Risk assessment and mitigation  </a> </li>
+                <li> <a href = "/Implementation.html" > Implementation </a> </li>
                 <li> <a target="_blank"> Executable JAR </a> </li>
                 <li> <a target="_blank"> Version control repository </a> </li>
             </ul>
@@ -43,38 +40,220 @@
     
         <div class = "Deliverables-Viewer">
             <div id = "Requirements">
-                <h2>Requirements</h2>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vTljVh2ceB_-mPxa6gfkJIY_nkdk0W_XeGM7ecMQOBATndS5Zws8ptC7wL6N8JlBV7uU7DUG_YFgOD0/pub?embedded=true" width = "80%" height = "6300" frameborder = "1" marginheight = "0" marginwidth = "0"></iframe>
-            </div>
-
-            <div id = "Architecture">
-                <h2>Architecture</h2>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vQdQaD6n7bLUEl3DONt6wjPvwlG7P3kJgZohH0Ct931ZCLz5Vwm13mLacsuTo-T8Kk9Pu2X4QHfIKQx/pub?embedded=true" width = "80%" height = "718" frameborder = "1" marginheight = "0" marginwidth = "0"></iframe>
-            </div>
-
-            <div id = "Method selection and planning">
-                <h2>Method selection and planning</h2>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSHiiPKA3Y6z61dxBvMxhPmMSqaRMHqtj4h9aZM5ZVbViC5tkkTp9EuF9ttTweR5kDDPoSe6M83VCSg/pub?embedded=true" width = "80%" height = "1700" frameborder = "1" marginheight = "0" marginwidth = "0"></iframe>
-            </div>
-
-            <div id = "Risk assessment and mitigation">
-                <h2>Risk assessment and mitigation</h2>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ-59d7afxFW2pZT9tisIiRKr90GE5D23PyHxK_OHrrsz75nLvvB4mwSzR6q97q_-Wvs9_Hp0cucygJ/pub?embedded=true" width = "80%" height = "4500" frameborder = "1" marginheight = "0" marginwidth = "0"></iframe>
-            </div>
-            
-            <div id = "Implementation">
-                <h2>Implementation</h2>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vQe-tRfvlbrUnvNbR9vK9aiqB4UlsCaBOlb8Csr3f4d4q7hn0P2JDn6wd2W_qs7NFT0Mt28uRr2ncHQ/pub?embedded=true" width = "80%" height = "718" frameborder = "1" marginheight = "0" marginwidth = "0"></iframe>
-            </div>
-
-            <div id = "Executable JAR">
-                <h2>Executable JAR</h2>
-
-            </div>
-
-            <div id = "Version control repository">
-                <h2>Version control repository</h2>
-
+                <h1 style = "text-align: center;">Requirements</h1>
+                <p>Link to document: <a href = "https://docs.google.com/document/d/1Rssf7AF-VZ8-AxsTISC7FIZk_NYL0bm6JCZN7T5Mcjg/edit?usp=sharing" target = "_blank">here</a></p>
+                <h2>Single Statement of Need</h2>
+                <p>Our Client has requested a single-player game which allows the player to escape a maze, wrapped in the guise of a University. There are three primary objectives for this project which have been outlined by our customer: The user should be able to escape within five minutes; There should be multiple events to interact with, some of which are hidden; There should be an opposing force working against the user. 
+                <br><br>
+                However, as developers, we recognise that there are many additional requirements for this project. As such, we arranged a meeting with our client to discuss and gather these additional requirements. A prior brainstorming session led us to compiling a list of questions to ask our client, allowing us to delve into the functionalities and wishes of the customer. This meeting was valuable to discovering the needs of our client, giving a clearer understanding of customer-needs and specifications. In the long-term, continuing to discuss and collaborate with our Client will aid in avoiding customer frustration and misunderstandings; also aligning with an agile approach to software development, prioritising customer collaboration. 
+                <br><br>
+                While this customer research gave us an insight into User Requirements, we understand that there is a hierarchy of requirement types and complexity. To level this complexity, we have separated our requirements into User Requirements and System Requirements. The latter is further divided into Functional, Non-Functional, and Constraint Requirements. This gives a simple classification of key requirements, which in themselves are given an appropriate Requirement ID. This allows us to easily reference and link requirements when needed. We intend for our system to meet all requirements that ‘shall’ be done in our specification. This ensures our final project meets as many of our clients primary objectives as possible. 
+                <br><br>
+                In summary: using the requirements elicited from the client, we will create a Maze Game based in a University, where the user should be able to escape within five minutes. After consulting our clients, as developers we have chosen to include multiple variants of boons and obstacles to interact with, as well as incorporating an environmental narrative to capture the interest of users. </p>
+                <h2>User Requirements</h2>
+                <p>User Requirements outline the general features and tasks the users should be able to carry out within the game.</p> 
+                
+                <table>
+                    <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>User Requirements</th>
+                    </tr>
+                    <tr>
+                            <td>UR_COMPLETE_ON_TIME</td>
+                            <td>The game should be balanced in difficulty for prospective students of the university (16+) to complete in 5 minutes, on their first try. Certain events could hinder or benefit the player’s completion.</td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_CAMPUS</td>
+                            <td>The map should include inside and outside areas, including; Lecture theatres, a lake, the lake underpass, bridges, different buildings like central hall and derwent. Lots of time should be spent on the map, and should be done ourselves. </td>
+                            <td>Should</td>
+                    </tr>
+                    <tr>
+                            <td>UR_BOONS_OBSTACLES_HIDDEN</td>
+                            <td>Interactable items/events leading to positive and/or negative outcomes, for example, a clue to exit, like a trail that leads you to a door/key. There should be more events in the game than a player would encounter in a play through, so every game is not the same. Additionally, a hidden event that has no impact on the game is necessary.</td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_DIMENSION</td>
+                            <td>The game uses a 2D approach. This will be implemented through tile maps, utilising perspective within tile design.</td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_WIN</td>
+                            <td>There should be multiple ways to win the game, all involving leaving the university grounds. The endings should have distinct paths and should provide a new experience. For example, to leave via boat you may need to unlock a shed to find a boat, oars and then leave via the lake; Leaving via the bus would require finding a bus stop, getting to in time, and having enough money to buy a ticket.</td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_MAP_GENERATION</td>
+                            <td>There should be static rooms designed that will always be the same, e.g classrooms, lecture theatres and safe rooms. Their placement may be generated, giving the map a dynamic feel. </td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_COMBAT</td>
+                            <td>We are choosing to implement a light combat system, which is kept strictly suitable for young children. <br> There will be no blood or excessive violence.</td>
+                            <td>Should</td>
+                    </tr>
+                    <tr>
+                            <td>UR_GAMEOVER</td>
+                            <td>No player death, the only way the game ends is via escaping (a win) or running out of time</td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_ASSETS</td>
+                            <td>We can make our own graphics but it can be creative commons</td>
+                            <td>Shall</td>
+                    </tr>
+                    <tr>
+                            <td>UR_REALPEOPLE</td>
+                            <td>Don’t make harmful depictions of real people.</td>
+                            <td>Shall</td>
+                    </tr>
+                </table>
+                <h2>System Requirements</h2>
+                <p>System requirements describe how the game will meet the needs of prospective players from a technical point of view. They will describe how we deliver key functionalities, such as player movement across the map, event completion, and interaction with items that affect the player’s progress. 
+                <br><br>
+                Each System Requirement supports a user requirement — for example, balancing gameplay difficulty and designing the map both contribute to allowing players to complete the game on time. This allows us to keep track of User Expectations, and supports game development, ensuring that it runs smoothly.
+                </p>
+                <h3>Functional Requirements</h3>
+                <table>
+                    <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>User Requirements</th>
+                    </tr>
+                    <tr>
+                            <td>FR_REQUIRENAME</td>
+                            <td>(Description & Fit Criterion)</td>
+                            <td>UR_REFERENCE</td>
+                    </tr>
+                    <tr>
+                            <td>FR_COMPLETION_TIME</td>
+                            <td>The system shall include a time that limits the gameplay up to five minutes only. When time runs out, the game will automatically end. </td>
+                            <td>UR_COMPLETE_ON_TIME</td>
+                    </tr>
+                    <tr>
+                            <td>FR_DIFFICULTY_BALANCE</td>
+                            <td>The system shall try to balance the game difficulty such that even an amateur player is able to finish the game in the given time period. </td>
+                            <td>UR_COMPLETE_ON_TIME</td>
+                    </tr>
+                    <tr>
+                            <td>FR_MAP_STRUCTURE</td>
+                            <td>The system will include an explorable map of the entire campus giving access to both indoor and outdoor areas of the buildings and the campus. </td>
+                            <td>UR_CAMPUS</td>
+                    </tr>
+                    <tr>
+                            <td>FR_PLAYER_NAVIGATION</td>
+                            <td>The system shall allow the players to move across the campus using keyboard or controller inputs. </td>
+                            <td>UR_CAMPUS</td>
+                    </tr>
+                    <tr>
+                            <td>FR_INTERACTIVE_ELEMENTS</td>
+                            <td>The system shall include interactive elements in the gameplay that might affect the player’s progress which could be either positive or negative. </td>
+                            <td>UR_BOONS_AND_OBSTACLES</td>
+                    </tr>
+                    <tr>
+                            <td>FR_GAME_DIMENSION</td>
+                            <td>The system shall present the game in a 2D environment using tile maps.</td>
+                            <td>UR_DIMENSION</td>
+                    </tr>
+                    <tr>
+                            <td>FR_MULTIPLE_ENDINGS</td>
+                            <td>The system shall provide the user with multiple winning conditions that all require gaining specific objectives </td>
+                            <td>UR_WIN</td>
+                    </tr>
+                    <tr>
+                            <td>FR_PROGRESS_TRACKING</td>
+                            <td>The system shall track the player’s progress and when the winning conditions are met, it would trigger the end of the game.</td>
+                            <td>UR_WIN</td>
+                    </tr>
+                    <tr>
+                            <td>FR_PROCEDURAL_GENERATION</td>
+                            <td>The system shall procedurally generate the placement of different rooms and items to make each gameplay session unique while maintaining the main structure of the campus unchanged. </td>
+                            <td>UR_MAP_GENERATION</td>
+                    </tr>
+                    <tr>
+                        <td>FR_COMBAT_MECHANISM</td>
+                        <td>The system shall include a combat mechanism, when if implemented, it would use only non violent elements to maintain the PG rating. </td>
+                        <td>UR_COMBAT</td>
+                    </tr>
+                </table>
+                <h3>Non-functional Requirements</h3>
+                <table>
+                    <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>User Requirements</th>
+                            <th>Fit Criteria</th>
+                    </tr>
+                    <tr>
+                            <td>NFR_REQUIRENAME</td>
+                            <td>Description</td>
+                            <td>UR_REFERENCE</td>
+                            <td>Fit Criteria</td>
+                    </tr>
+                    <tr>
+                            <td>NFR_PERFORMANCE</td>
+                            <td>The system shall load and restart the game within 10 seconds. </td>
+                            <td>UR_COMPLETE_GAME_ON_TIME</td>
+                            <td>Restart time <=10 seconds</td>
+                    </tr>
+                    <tr>
+                            <td>NFR_USABILITY</td>
+                            <td>The game design should be accessible to colourblind users.</td>
+                            <td>UR_CAMPUS</td>
+                            <td>Avoid colour palettes which have little contrast to colourblindness. </td>
+                    </tr>
+                    <tr>
+                            <td>NFR_INTUITIVE</td>
+                            <td>The game interface will be intuitive and easy for new players to understand the game without a tutorial. </td>
+                            <td>UR_CAMPUS</td>
+                            <td>Most players can start playing the game without external help </td>
+                    </tr>
+                </table>
+                <h3>Constraint Requirements</h3>
+                <table>
+                    <tr>
+                            <th>ID</th>
+                            <th>Description</th>
+                            <th>Constraint Type</th>
+                    </tr>
+                    <tr>
+                            <td>CR_DEADLINE_A1</td>
+                            <td>Assessment 1 Deadline is 10th November 2025</td>
+                            <td>Project</td>
+                    </tr>
+                    <tr>
+                            <td>CR_DEADLINE_A2</td>
+                            <td>Assessment 2 Deadline is 30th January 2025 </td>
+                            <td>Project</td>
+                    </tr>
+                    <tr>
+                            <td>CR_ELICIT_REQ</td>
+                            <td>Use IEEE 29148-2018 to elicit requirements</td>
+                            <td>Process</td>
+                    </tr>
+                    <tr>
+                            <td>CR_PLAYTIME_LIMIT</td>
+                            <td>The user must have up to five minutes of gameplay.</td>
+                            <td>Design</td>
+                    </tr>
+                    <tr>
+                            <td>CR_COMP_SPECS</td>
+                            <td>The game shall run on computers with Windows, Linux and Macs.</td>
+                            <td>Design</td>
+                    </tr>
+                    <tr>
+                            <td>CR_SCREEN_SCALE</td>
+                            <td>The game should be presentable on both laptops and large screens.</td>
+                            <td>Design</td>
+                    </tr>
+                    <tr>
+                            <td>CR_PROGRAMMING_LANGUAGE</td>
+                            <td>Java (version 17) must be used to program the game.</td>
+                            <td>Design</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
