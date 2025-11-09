@@ -98,15 +98,15 @@
                     </tr>
                 </table>
 
-                <img src = "Initial Prototype 1.png" style = "padding: 20px; border: 1px solid black; margin-right: 20px;">
-                <img src = "Inital Prototype 2.jpg" style = "padding: 20px; border: 1px solid black; margin-right: 20px;">
+                <img src = "Initial Prototype.png" style = "padding: 20px; border: 1px solid black; margin-right: 20px;">
+                <img src = "Initial Prototype 2.png" style = "padding: 20px; border: 1px solid black; margin-right: 20px;">
 
                 <p>On our first approach we just prioritised the Entity Class, and the two derived classes Player, and Enemy. On the final diagram, we chose to include Projectiles as a class, inheriting from Entity - this meant we had to include a new derived class to Entity, LivingThings. This will be the new parent class to Player and Enemy, a decision made because they share more attributes (for example dmg and hp) and methods (such as Move and Attack).
 
                 Our thought process for this initial decision was that the 3 classes (Enemy, Player and Projectile) will share a number of attributes and functions. For example, the collision method, which is implemented in the superclass Entity, will be used by all three classes. All entities will have the same collision detection method, meaning there’s no need to have duplicated methods.
                 <br><br>
                 The final UML Diagram we made during this phase:</p>
-                <img src = "Initial Prototype 3.jpg" style = "padding: 20px; border: 1px solid black;">
+                <img src = "Initial Prototype 3.png" style = "padding: 20px; border: 1px solid black;">
 
                 <h3>Abstract Class Entity</h3>
                 <table>
