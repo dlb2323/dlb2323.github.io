@@ -41,9 +41,9 @@
         <div class = "Deliverables-Viewer">
             <div id = "Architecture">
                 <h1 style = "text-align: center;">Architecture</h1>
-                <p>Link to PDF document: <a href = "https://docs.google.com/document/d/15H0Vl7PiyKjYLsQLO7aWCYuDEqkZGsIGbp1u_t_Znp8/edit?usp=sharing" target = "_blank">here</a></p>
+                <p>Link to PDF document: <a href = "https://drive.google.com/file/d/1moiKZ5c5r-OmcxwkzLNF9TErWI2zm4tE/view?usp=sharing" target = "_blank">here</a></p>
                 <div class = "Diagram-Links">
-                    <a href = "#UML Class Diagram">UML Class Diagram</a>
+                    <a href = "#UML Class Diagram">Final UML Class Diagram</a>
                     <a href = "#Initial Prototype">Initial Prototypes</a>
                     <a href = "#Second Design Phase">State Machine Diagrams</a>
                     
@@ -51,30 +51,20 @@
 
                 <h2>Introduction to our Diagrams</h2>
 
-                <p>To describe how we plan and implement different functions of the game, we have chosen to use UML diagrams. Structural Diagrams will visualize core entities, their features, and relationships - covering the static portion of the project. In contrast Behavioural Diagrams include sequence diagrams covering how components interact with each other. We will be creating Structural Class diagrams and State Machine diagrams, two diagrams of the main UML diagram categories. We chose to use these specific diagrams as they are the most commonly used diagrams, meaning they will be widely understood and have plenty of resources available.
+                <p>To describe how we plan to implement different functions of the game, we have chosen to use UML diagrams. Structural Diagrams will visualize core entities, their features, and relationships - covering the static portion of the project. In contrast, Behavioural Diagrams include sequence diagrams covering how components interact with each other. We will be creating Structural Class diagrams and State Machine diagrams, for each of the main UML diagram categories. We chose to use these specific diagrams as they are the most commonly used diagrams, meaning they will be widely understood and have plenty of resources available.
                 <br><br>
-                For an Architecture Pattern, we will be using Entity-Component-Systems Diagram. This is a favoured method in video game development, we chose it as it facilitates code reusability allowing us to save time in the production phase of this project. This is important with the short amount of time we have. It is an appropriate use case as a lot of the built-in LibGDX classes have to be implemented using composition, such as TextureRegion, Animation<TextureRegion> and OrthographicCamera. We will be using Inheritance for some of the Entities, for example LivingThing inherits from Entity. This stops code repetition as the parent class will have a method defined, one example in our code is the fact Entity has the draw method (placing the Entities onto the screen) defined, meaning it doesn’t have to be repeated in the Enemy and Player class. 
+                For an Architecture Pattern, we will be using an Entity-Component-Systems Diagram. This is a favoured method in video game development, as it facilitates code reusability, allowing us to save time in the production phase of this project. This is important considering the short amount of time we have. It is an appropriate use case as a lot of the built-in LibGDX classes have to be implemented using composition, such as TextureRegion, Animation<TextureRegion> and OrthographicCamera. We will be using Inheritance for some of the Entities, for example Player and Enemy inherits from Entity. This stops code repetition as the parent class will have a method defined, one example in our code is the fact Entity has the draw method (placing the Entities onto the screen) defined, meaning it doesn’t have to be repeated in the Enemy and Player class. 
                 <br><br>
-                Find the final UML Class diagram <a href = "#UML Class Diagram">here</a>.
-
-                <h2 id = "UML Class Diagram">UML Class Diagram</h2>
-                <img src = "UML Class Diagram.drawio.png">
-
+                Find the final UML Class diagram <a href = "#UML Class Diagram">here</a>.</p>
                 <br><br>
-                To create these Structural and Behavioral diagrams, we have decided to use Draw.io. It is a free, web-based platform that requires no download; which has the functionalities we require. Other options available were either too sophisticated for our needs or required additional external software.
-                </p>
-
+                <p>To create these Structural and Behavioral diagrams, we have decided to use <a href = "draw.io">Draw.io</a>. It is a free, web-based platform that requires no download; which has the functionalities we require. Other options available were either too sophisticated for our needs or required additional external software.</p>
                 <h2>Our thoughts when designing the Diagrams</h2>
-                <p>We began by considering the main objects of the game: the Player and the Enemies. These are the principle moving parts of the game. They will share some common methods (such as collision, kill and move) and attributes (such as texture, position, speed). Therefore, we have decided to put them all in the same parent class, reducing code repetition. There will be more in common between the Player and Enemies than between them and a Projectile, for example a Projectile does not have HP. So we have designed an abstract sub-class that contains these extra functionalities, which will be the parent class of the Player and Enemy classes, named LivingThings. 
+                <p>We began by considering the main objects of the game: the Player and the Enemies. These are the principle moving parts of the game. They will share some common methods (such as collision, kill and move) and attributes (such as texture, position, speed). Therefore, we have decided to put them all in the same parent class, reducing code repetition. There will be more in common between the Player and Enemies, than between them and a Projectile. For example, a Projectile does not have HP. So, we have designed an abstract sub-class that contains these extra functionalities, which will be the parent class of the Player and Enemy classes, named LivingThings. 
                 <br><br>
-                Over the course of this project, we had three interim design phases, creating diagrams for our thoughts in the beginning, middle and end. 
-                </p>
-
+                Over the course of this project, we had three interim design phases, creating diagrams for our thoughts in the beginning, middle and end. </p>
                 <h2>First Design Phase</h2>
-                <p>The Initial UML Class Diagrams can be found  <a href = "#Initial Prototype">here</a>, in order of creation. </p>
-                
-                <h2 id = "Initial Prototype">Initial Prototypes</h2>
-                
+                <p>The Initial UML Class Diagrams can be found <a href = "#Initial Prototype">here</a>, they are in order of creation. </p>
+                <h2 id = "Initial Prototype"> Initial Prototype </h2>
                 <table>
                     <tr>
                             <th>Key</th>
@@ -100,75 +90,42 @@
 
                 <img src = "Initial Prototype.png" style = "padding: 20px; border: 1px solid black; margin-right: 20px;">
                 <img src = "Initial Prototype 2.png" style = "padding: 20px; border: 1px solid black; margin-right: 20px;">
-
-                <p>On our first approach we just prioritised the Entity Class, and the two derived classes Player, and Enemy. On the final diagram, we chose to include Projectiles as a class, inheriting from Entity - this meant we had to include a new derived class to Entity, LivingThings. This will be the new parent class to Player and Enemy, a decision made because they share more attributes (for example dmg and hp) and methods (such as Move and Attack).
-
-                Our thought process for this initial decision was that the 3 classes (Enemy, Player and Projectile) will share a number of attributes and functions. For example, the collision method, which is implemented in the superclass Entity, will be used by all three classes. All entities will have the same collision detection method, meaning there’s no need to have duplicated methods.
+                <p>On our first approach, we prioritised the Entity Class, and the two derived classes Player and Enemy. On the final diagram, we chose to include Projectiles as a class, inheriting from Entity - this meant we had to include a new derived class to Entity, LivingThings. This will be the new parent class to Player and Enemy, a decision made because they share attributes (for example dmg and hp) and methods (such as Move and Attack).</p>
                 <br><br>
-                The final UML Diagram we made during this phase:</p>
+                Our initial thought process was that the 3 classes (Enemy, Player and Projectile) will share a number of attributes and functions. For example, the collision method, which is implemented in the superclass Entity, will be used by all three classes. All entities will have the same collision detection method, meaning there’s no need to have duplicated methods.
+                <br><br>
+                This is the final UML Diagram we made during this phase:</p>
+
                 <img src = "Initial Prototype 3.png" style = "padding: 20px; border: 1px solid black;">
-
-                <h3>Abstract Class Entity</h3>
-                <table>
-                    <tr>
-                            <th>Method</th>
-                            <th>Purpose</th>
-                    </tr>
-                    <tr>
-                            <td>Collision</td>
-                            <td>An implemented method, assuming that all objects are the same shape, using the same collision detection programme to determine whether a collision has occurred with the local object and another entity or tile. Returns the object/tile that the collision occurred with.</td>
-                    </tr>
-                    <tr>
-                            <td>Kill</td>
-                            <td>An implemented method that removes the object from the entities array and destroys its instance. Returns true.</td>
-                    </tr>
-                    <tr>
-                            <td>Move</td>
-                            <td>An unimplemented method that will be defined differently in each subclass - for example, a projectile will just move straight from where an enemy is facing until it hits something, whereas an enemy will move toward the player and keep facing it at all times.</td>
-                    </tr>
-                    <tr>
-                            <td>Position</td>
-                            <td>The coordinates of the entity on the map.</td>
-                    </tr>
-                    <tr>
-                            <td>Sprite</td>
-                            <td>Contains the sprite information of the entity.</td>
-                    </tr>
-                    <tr>
-                            <td>Speed</td>
-                            <td>Contains the velocity that the entity moves.</td>
-                    </tr>
-                </table>
-
-                <h3>Class Projectile</h3>
-                <table>
-                    <tr>
-                            <th>Method</th>
-                            <th>Purpose</th>
-                    </tr>
-                    <tr>
-                            <td>Move</td>
-                            <td>using information parsed from the object that defined it (for example, an instance of enemy) like the direction it is facing, the projectile will move in a constant direction at a constant speed until it hits something. It will then call the Collide method and, if it hit a player, for example, it would run the Impact method.</td>
-                    </tr>
-                    <tr>
-                            <td>Impact</td>
-                            <td>called only when a projectile collides with another entity. If it hit the player, for example, the projectile would run Kill on itself, then it would deal the defined amount of damage ‘dmg’ to the player. If it hit another projectile, both would be killed.</td>
-                    </tr>
-                </table>
-                <h2 id = "Second Design Phase">Second Design Phase</h2>
-                <p>The first thing we did during this phase was create a State Machine Diagram. This Behavioural Diagram allowed us to abstract the three main derived classes we were going to create. With no attributes, or methods, this diagram would help us understand the core purpose and roles a class would need - allowing us to focus on how we would implement later. We have replaced Projectile with Item in this diagram. You can find the Diagrams on the website <a href = "#Second Design Phase">here</a>.</p>
                 
+                <h2 id = "Second Design Phase">Second Design Phase</h2>
+                <p>Our first task during this phase was to create a State Machine Diagram. This Behavioural Diagram allowed us to abstract the three main derived classes we were going to create. Detailing no attributes or methods, this diagram would help us understand the core purpose and roles a class would need - allowing us to focus on how we would implement later. We have replaced Projectile with Item in this diagram. You can find the Diagrams on the website <a href = "#Second Design Phase">here</a>.
+                <br><br>
                 <img src = "Enemy_ State Machine Diagram.drawio.png" style = "padding: 20px; border: 1px solid black;">
                 <img src = "Item_ State Machine Diagram.drawio.png" style = "padding: 20px; border: 1px solid black;">
                 <img src = "Player_ State Machine Diagram.drawio.png" style = "padding: 20px; border: 1px solid black;">
-                <p>The main focus in this design phase was to further modularisation of the Entity class and its functionality. As mentioned in the State Machine Diagrams, we have replaced the Projectiles class with FloorItem. Our plan is that any item in the game will be found on the floor, waiting to be picked up by the player. </p>
+                <br><br>
+                The main focus in this design phase was to further modularisation of the Entity class and its functionality. As mentioned in the State Machine Diagrams, we have replaced the Projectiles class with FloorItem. Our plan is that any item in the game will be found on the floor, waiting to be picked up by the player. </p>
+
                 <img src = "Entity Class 2.png">
                 <h2>Final Design Phase</h2>
-                <p>During the final stretch of the project, we thought it important to create an Entity-Component-System Diagram to show how our three Entities (Player, Enemy, and Item) will work with the LibGDX library. 
+                <p>During the final stretch of the project, we thought it important to create an Entity-Component-System Diagram to show how our three Entities (Player, Enemy, and Item) will work with the LibGDX library. </p>
+
+                <img src = "ECS Final Diagram(1).png">
+                <p>
+                The entities at the top (Entity, Player, LivingThing, Enemy and Item) are all classes that we have implemented ourselves. All of the Components at the bottom are given from the LibGDX library, and have been implemented for us to use. 
                 <br><br>
-                The final UML Class diagram is located <a>here</a>.</p>
-                
-                
+                The Texture Component allows the Entity to have an appearance, using one of our created assets. The Sprite Component holds the information about the Entity, the texture, source coordinates and source size. The TextureRegion Component is used to hold the animation frames, and the Animation component is what helps animate the Entities on screen. 
+                </p>
+
+                <img src = "UML Class Diagram.png">
+
+                <p>
+                Our final UML Class diagram includes specific methods and attributes that aid the classes. We used abstraction to not over-complicate the design process and avoid making specific implementation decisions. For example, as per our FR_PLAYER_NAVIGATION requirement, the Player being able to move is an important part of the game. Prior to this design, we didn’t include the Animation frames, allowing us to change how the Player will move. This requirement is fulfilled with the move method in the Player class.
+                <br><br>
+                The Combat Requirement FR_COMBAT_MECHANISM is fulfilled using a variety of methods. The Enemy class has a IsPlayerInSight method that alerts it when the Player is in a certain range, predetermined as an attribute in the Enemy class. Once the Player is in range, the Enemy class uses the functions chase and swing to make sure the Player is in range of attacking by following them and once they are in range, the Enemy deals damage to the Player. As per our UR_GAMEOVER requirement, the Player will never die but instead be “down” meaning that the health regenerates and the Enemy will no longer see that the Player is in range so it will start patrolling again. This means that the Player will have to wait for their health to be full again, which will take away from their 5 minute limit.
+                </p>
+
             </div>
         </div>
     </div>
