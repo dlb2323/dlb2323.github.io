@@ -32,7 +32,7 @@ body {
 
 .Deliverables-Links ul {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto
+    grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
 .Deliverables-Links li{
